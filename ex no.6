@@ -1,0 +1,20 @@
+#include <stdio.h>   
+int main() 
+{ 
+int n, i, sum = 0,even=2; 
+ 
+printf("Enter a Positive Integer Number: "); 
+scanf("%d", &n); 
+i = 0; 
+printf("\nThe Even Number(s) are "); 
+ 
+while ( i<n ) 
+{ printf("%d ",even); 
+sum += even; 
+even +=2; 
+i++; 
+} 
+printf("\nSum of above Even Number Series = %d", sum);
+} 
+
+ 
