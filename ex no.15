@@ -1,0 +1,19 @@
+#include <stdio.h> 
+int main() 
+{ 
+ FILE *fp = fopen("new1.txt", "w"); 
+ clrscr(); 
+ if(fp==NULL) 
+ { 
+ printf(“\n Permission Denied to Create File \n”);
+ getch();
+ exit(0);
+} 
+else 
+{ 
+ fprintf(fp, "Hello Students.\nHave a NICE DAY "); 
+ printf(“\n File Created Successfully”); 
+ getch(); 
+ fclose(fp); 
+ } 
+} 
