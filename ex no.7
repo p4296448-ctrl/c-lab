@@ -1,0 +1,29 @@
+#include<stdio.h> 
+int main() 
+{ 
+int a[30], e, num, i; 
+clrscr(); 
+ 
+printf("\nEnter Number of Elements in the List : "); 
+scanf("%d", &num); 
+printf("\nEnter the List of Elements : \n"); 
+ 
+for (i = 0; i<num; i++) 
+{ scanf("%d", &a[i]); 
+} 
+printf("\nEnter the Value of Elements to be Searched : "); scanf("%d", &e); 
+ 
+i=0; 
+while (i<num) 
+{ 
+
+if(e == a[i]) 
+{ printf("\nThe Element is Present at the Location %d ",i+1); 
+exit(0); 
+} 
+i++; 
+} 
+ 
+printf("Element Not found in the List"); 
+} 
+ 
