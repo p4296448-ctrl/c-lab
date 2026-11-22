@@ -1,0 +1,20 @@
+#include <stdio.h> 
+#include<string.h> 
+int main() 
+{ 
+ char str[100]; 
+ int i; 
+ int length = 0; 
+ 
+ fflush(stdin); 
+ printf("\nSTRING OPERATIONS \n"); 
+ printf("\nString Length \n"); 
+ printf("\nEnter a string: "); 
+ scanf("%s",str); 
+ printf("\n\nLength of the string (using Library Function): %d", strlen(str)); 
+ 
+ for(i = 0; str[i] != '\0'; ++i); 
+ length=i; 
+ printf("\n\nLength of the string (Without using Library function) : %d", length); 
+ } 
+ 
