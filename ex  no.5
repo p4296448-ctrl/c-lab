@@ -1,0 +1,17 @@
+#include<stdio.h>  
+int main() 
+{
+int n, i, sum = 0; 
+clrscr(); 
+ 
+printf("Enter a Positive Integer Number: "); 
+scanf("%d", &n); 
+printf("\nThe Sum of the Series "); 
+ 
+for(i=1; i<= n; i++) 
+{ 
+printf("%d + ",i); 
+sum += i; 
+} 
+printf("\nSum = %d", sum); 
+} 
