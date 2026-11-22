@@ -1,0 +1,22 @@
+#include <stdio.h> 
+void swap(int , int); 
+int main() 
+{ 
+ int a = 10; 
+ int b = 20; 
+ 
+ printf("From Main \n Before Swapping the Values \n a = %d, b = %d\n",a,b); swap(a,b); 
+ 
+ printf("\n From Main \n After Swapping Values at Function Swap a = %d, b = %d\n",a,b);
+} 
+ 
+void swap (int v1, int v2) 
+{ 
+ int temp; 
+ printf("\nInside Function Swap");
+ temp = v1; 
+ v1=v2; 
+ v2=temp; 
+ printf("\nAfter Swapping Values inside Function Swap \n v1 = %d, v2 = %d\n",v1,v2); 
+ printf("Exiting from Function Swap\n"); 
+} 
