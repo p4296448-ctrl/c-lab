@@ -1,0 +1,38 @@
+#include<stdio.h>   
+Extern _floatconvert; 
+#pragma extref _floatconvert 
+ 
+struct person 
+{ 
+ char name[30]; 
+ float height; 
+ float weight; 
+ double bmi; 
+}; 
+ 
+void main() 
+{ 
+ int i,n;
+ struct person p[5]; 
+ printf("Enter the number of persons detail to be entered : "); 
+ scanf("%d", &n); 
+ for(i=0;i<n;i++) 
+{ 
+ printf("Enter the name of the Person : "); 
+ scanf("%s", p[i].name); 
+ 
+ printf("Enter the height of the Person(in meter) : "); 
+ scanf("%f", &p[i].height); 
+ 
+ printf("Enter the weight of the Person(in Kgs) : "); 
+ scanf("%f", &p[i].weight); 
+ 
+ p[i].bmi=p[i].weight/(p[i].height*p[i].height); 
+} 
+printf("\nPerson Details\n"); 
+printf("Name \t\t\t\t Height \t weight \t BMI\n");
+for(i=0;i<n;i++) 
+{ 
+ printf("%-30s \t %.2f \t\t %.2f \t\t%.2f \n", p[i].name, p[i].height, p[i].weight, p[i].bmi); 
+ } 
+} 
